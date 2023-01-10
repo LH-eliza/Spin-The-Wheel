@@ -1,6 +1,6 @@
-const wheel = Document.GetElementById("Wheel");
-const spinBtn = Document.GetElementById("Spin-Btn");
-const finalValue = Document.GetElementById("Final-Value");
+const wheel = document.getElementById("Wheel");
+const spinBtn = document.getElementById("Spin-Btn");
+const finalValue = document.getElementById("Final-Value");
 
 //Values of Min and Max Angle 
 const RotationValues = [
@@ -15,7 +15,7 @@ const RotationValues = [
 //Size Of Each Piece
 const Data = [16, 16, 16, 16, 16, 16];
 //Background Color For Each Piece
-var PieColors = [
+var pieColors = [
   "#8b35bc",
   "#B163da",
   "#8b35bc",
@@ -23,9 +23,9 @@ var PieColors = [
   "#8b35bc",
   "#B163da",
 ];
-let myChart = newChart(wheel, {
-  Plugins: [ChartDataLabels],
-  Type: "Pie",
+let myChart = new Chart(wheel, {
+  plugins: [ChartDataLabels],
+  type: "Pie",
   Data: {
     Labels: [1, 2, 3, 4, 5, 6],
     Datasets: [
@@ -35,7 +35,7 @@ let myChart = newChart(wheel, {
       },
     ],
   },
-  Options: {
+  options: {
     Responsive: True,
     Animation: { Duration: 0 },
     Plugins: {
@@ -45,7 +45,7 @@ let myChart = newChart(wheel, {
       },
       Datalabels: {
         color: "#ffffff",
-        Formatter: (_, Context) => Context.Chart.Data.Labels[Context.DataIndex],
+        formatter: (_, Context) => Context.Chart.Data.Labels[Context.DataIndex],
         font: { Size: 24 },
       },
     },
