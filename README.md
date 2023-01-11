@@ -1,3 +1,5 @@
 Spin The Wheel 
 ------------------
-Basic JS, HTML, and CSS
+This is a wheel that spins... self-explaintory. 
+Created using JS, CSS, and HTML -- you can use this for your website or whatever purpose you have for a wheel 
+
