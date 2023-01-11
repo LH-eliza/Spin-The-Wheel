@@ -56,7 +56,7 @@ const valueGenerator = (AngleValue) => {
     if (AngleValue >= I.minDegree && AngleValue <= I.maxDegree) {
       finalValue.InnerHTML = `<P>value: ${I.value}</P>`;
       spinBtn.Disabled = False;
-      Break;
+      break;
     }
   }
 };
